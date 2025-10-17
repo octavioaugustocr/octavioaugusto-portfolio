@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Portfolio - Octávio Augusto</title>
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="imgs/favicon.svg" alt="Favicon" class="favicon-pulse">
+    </div>
+    <nav>
+        <button id="menu-toggle">☰</button>
+        <div id="menu-links">
+            <a href="#container">Início</a>
+            <a href="#imgProjetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
+
+    <div id="container">
+        <div id="informacoes" data-aos="fade-right">
+            <p>Olá, eu sou</p>
+            <h1 id="typewriter">O</h1>
+            <div class="tech-logos">
+                <img alt="HTML"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                <img alt="CSS"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                <img alt="JavaScript"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                <img alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="react logo" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="bootstrap logo" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" 
+                    alt="csharp logo" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"alt="dotnetcore logo" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
+                    alt="dot-net logo" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" 
+                    alt="nodejs logo" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                    alt="figma logo" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rider/rider-original.svg"
+                    alt="rider logo" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" 
+                    alt="vscode logo" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="visualstudio logo" />
+            </div>
+            <h2>Software Developer | Web FullStack</h2>
+            <h3 id="sobreMimH3">Sou um entusiasta da programação com formação técnica em <strong>Informática para Internet</strong> 
+                e atualmente cursando <strong>Técnico em Desenvolvimento de Sistemas</strong> pelo SENAI. Meu próximo passo é aprofundar meus
+                conhecimentos na <strong>Engenharia de Software</strong>, buscando uma base sólida para construir soluções inovadoras e eficientes.</h3>
+            <button id="verProjetosBtn">Ver
+                Projetos</button>
+            <button style="margin: 0 0 0 10px;">Download CV</button>
+        </div>
+        <div id="myimg" data-aos="fade-left">
+            <img src="imgs/eu.png" alt="Octávio Augusto" id="minhaFoto">
+        </div>
+    </div>
+
+    <div id="sobreMim" data-aos="fade-up">
+        <div id="infoProjetos">
+            <div id="textsSobre">
+                <h2 style="text-align: center;">Projetos</h2>
+            </div>
+            <div id="imgProjetos" class="projects-grid">
+            </div>
+            <div class="view-more-projects">
+                <a href="http://github.com/octavioaugustocr" target="_blank" class="btn-view-more">Ver mais projetos</a>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contato" data-aos="fade-up">
+        <div class="footer-content">
+            <p style="color: #3b82f6;">&copy; 2025 Octávio Augusto. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="http://www.linkedin.com/in/octavio-augusto-7b3501325/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/taviok1ng/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:octavioaugusto5566@gmail.com" target="_blank" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="http://github.com/octavioaugustocr" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="projectModal" style="display: none;" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalProjectName"></h3>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                </div>
+                <button class="prev-slide">&#10094;</button>
+                <button class="next-slide">&#10095;</button>
+            </div>
+            <p id="modalProjectDescription"></p>
+            <div id="modalProjectTechs" class="tech-tags">
+            </div>
+            <a id="modalProjectLink" href="#" target="_blank" class="project-link-button">Acessar projeto</a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
