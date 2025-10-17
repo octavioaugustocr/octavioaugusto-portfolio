@@ -65,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
     typeWriter();
 
     AOS.init({
-        disable: window.innerWidth < 768,
         duration: 1200,
         offset: 100
     });
