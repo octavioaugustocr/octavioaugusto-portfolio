@@ -27,7 +27,7 @@ Este portfólio foi desenvolvido utilizando as seguintes tecnologias:
 
 ## Como Visualizar
 
-[Clique Aqui Para Visualizar](https://octavioaugustocr.github.io/)
+[Clique Aqui Para Visualizar]([https://octavioaugustocr.github.io/](https://octavioaugustocr.github.io/octavioaugusto-portfolio/))
 
 ## Contato
 
